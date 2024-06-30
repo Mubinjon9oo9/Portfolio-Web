@@ -108,8 +108,8 @@ section {
     box-shadow: 0 2px 5px 0 #00000055;
   }
   label input:checked + b {
-    background-color: #FC466B;
-    box-shadow: 0 0 0 0 transparent inset, 0 0 8px 0 #FC466B;
+    background: linear-gradient(to right, #6e159b, #c70039);
+    box-shadow: 0 0 0 0 transparent inset, 0 0 8px 0 #6e159b;
   }
   label input:checked + b:before {
     -webkit-transform: translateX(30px);
