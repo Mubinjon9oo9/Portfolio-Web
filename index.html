@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebPortfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="head_main">
+        <div style="flex: 1;display: flex;">
+            <div id="gradientBG">
+                <img src="images/photo.jpeg" id="main_photo">
+            </div>
+            <div class="name">
+                <h3>Mubinjon Akilzhanov</h3>
+                <p>Software Developer</p>
+            </div>
+        </div>
+        <div class="switcher">
+            <span>OFF</span>
+            <label onclick="switchScroll()"><input type="checkbox" id="scroll" checked /><b></b></label>
+            <span>ON</span>
+          </div>
+
+    </div>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Your about me text goes here.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div id="project-list"></div>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Your contact information goes here.</p>
+    </section>
+    <script src="scripts.js"></script>
+</body>
+</html>
