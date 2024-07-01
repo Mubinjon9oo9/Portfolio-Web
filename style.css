@@ -1,8 +1,18 @@
+:root{
+    --bg-color: ##fff;
+    --text-color: #000;
+    --primary-color: linear-gradient(to right, #ff5733, #c70039);
+}
 body {
     font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+}
+#mcolor{
+    background-color: #fff;
+    display: none;
 }
 header {
-    background-color: #f8f9fa;
+    background-color: var(--bg-color);
     padding: 20px;
     text-align: center;
 }
@@ -38,6 +48,7 @@ section {
 .name p{
     font-size: 14px;
     margin: 0;
+    color: var(--text-color);
 }
 .name{
     margin: auto 0 auto 20px;

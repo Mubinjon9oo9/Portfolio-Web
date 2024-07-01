@@ -1,15 +1,12 @@
-window.onload = function() {
-    var projects = [
-        {title: 'Project 1', description: 'Description of Project 1', link: '#'},
-        {title: 'Project 2', description: 'Description of Project 2', link: '#'},
-        {title: 'Project 3', description: 'Description of Project 3', link: '#'}
-    ];
-    var projectList = document.getElementById('project-list');
-    for (var i = 0; i < projects.length; i++) {
-        var project = document.createElement('div');
-        project.innerHTML = '<h3>' + projects[i].title + '</h3>' +
-                            '<p>' + projects[i].description + '</p>' +
-                            '<a href="' + projects[i].link + '">View Project</a>';
-        projectList.appendChild(project);
+var bg = "#fff"
+document.getElementById("scroll").addEventListener("change", function(){
+    if (bg=="#fff"){
+        document.documentElement.style.setProperty("--bg-color", "#000");
+        document.documentElement.style.setProperty("--text-color", "#fff");
+        bg = "#000"
+    }else{
+        document.documentElement.style.setProperty("--bg-color", "#fff");
+        document.documentElement.style.setProperty("--text-color", "#000");
+        bg = "#fff"
     }
-}
+})
