@@ -1,5 +1,5 @@
 var bg = "#fff"
-document.getElementById("scroll").addEventListener("change", function(){
+function modeSwitch(){
     if (bg=="#fff"){
         document.documentElement.style.setProperty("--bg-color", "#000");
         document.documentElement.style.setProperty("--text-color", "#fff");
@@ -9,4 +9,4 @@ document.getElementById("scroll").addEventListener("change", function(){
         document.documentElement.style.setProperty("--text-color", "#000");
         bg = "#fff"
     }
-})
+}
