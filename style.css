@@ -78,6 +78,7 @@ section {
     font-weight: bold;
     letter-spacing: 1px;
     padding: 20px;
+    color: var(--text-color);
   }
   label {
     position: relative;
@@ -128,11 +129,11 @@ section {
     transform: translateX(30px);
   }
   .container {
-    margin-top: 30px;
 	left: 0;
 	top: 0;
 	right: 0;
 	bottom: 0;
+    margin: 30px 0px 0px 20px;
 	display: flex;
 	align-items: start;
 	justify-content: center;
@@ -179,7 +180,7 @@ input[type="radio"] {
 	&:checked {
 		& + label {
 			color: var(--text-color);
-			
+			z-index: 2;
 		}
 	}
 }
@@ -222,7 +223,7 @@ input[id="radio-3"] {
     margin: 0 20px;
     padding: 40px;
     box-shadow: 0 0 10px 0 var(--text-color);
-    border-radius: 100px;
+    border-radius: 3em;
     height: 600px;
     justify-content: center;
     text-align: center;
